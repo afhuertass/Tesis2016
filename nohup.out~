@@ -1,0 +1,66 @@
+#tamaño: 843750
+### Reynolds number 5
+# tau:1.025
+# viscocidad:0.175
+# UMAX : 0.05
+#time(s):620.159
+5 -0.0035231
+### Reynolds number 10
+# tau:0.7625
+# viscocidad:0.0875
+# UMAX : 0.05
+#time(s):488.342
+10 -0.0063415
+### Reynolds number 15
+# tau:0.675
+# viscocidad:0.0583333
+# UMAX : 0.05
+#time(s):488.161
+15 -0.0077367
+### Reynolds number 20
+# tau:0.63125
+# viscocidad:0.04375
+# UMAX : 0.05
+#time(s):487.662
+20 -0.0076216
+### Reynolds number 25
+# tau:0.605
+# viscocidad:0.035
+# UMAX : 0.05
+#time(s):487.597
+25 -0.0063833
+### Reynolds number 30
+# tau:0.5875
+# viscocidad:0.0291667
+# UMAX : 0.05
+#time(s):487.556
+30 -0.0033112
+### Reynolds number 35
+# tau:0.575
+# viscocidad:0.025
+# UMAX : 0.05
+#time(s):487.905
+35 0.0023377
+### Reynolds number 40
+# tau:0.565625
+# viscocidad:0.021875
+# UMAX : 0.05
+#time(s):487.437
+40 0.0110473
+### Reynolds number 45
+# tau:0.558333
+# viscocidad:0.0194444
+# UMAX : 0.05
+#time(s):487.439
+45 0.0228242
+### Reynolds number 50
+# tau:0.5525
+# viscocidad:0.0175
+# UMAX : 0.05
+#time(s):487.964
+50 0.0373666
+### Reynolds number 55
+# tau:0.547727
+# viscocidad:0.0159091
+# UMAX : 0.05
+#time(s):487.5
