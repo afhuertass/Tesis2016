@@ -12,18 +12,17 @@
 
 
 #include <inc/meshIncludes.h>
-#include <inc/headers/Modelo.h>
+#include <inc/headers/Model.h>
 #include <inc/headers/MeshHelper.h>
 #include <inc/headers/PreGridProcessing.h>
 
 int main(){
-
+  // it builds up the model 
   Modelo casa("cubo.obj");
   Polyhedron_m p = casa.createPolyForMesh();
-  //std::cout << "#size of Model " << sizeof(casa) << std::endl;
-  //std::cout << "#size of Model " << sizeof(p) << std::endl;
+  
   MeshHelper mh( p );
-  //std::cout << "#size of MeshHelper " <<sizeof(mh) <<  std::endl;
+  
   mh.saveMeshFile();
 
   PreGridProcessing preGrid(300,120,60,2.5);
