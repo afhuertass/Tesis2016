@@ -1,0 +1,24 @@
+#include <arrayfire.h>
+// armazon de la clase encargada de las simulaciones
+const int q = 15;
+class LatticeBolztmann3DQ15{
+ private:
+  float V[3][q]; // velocidades del lattice
+  array f; // funciones de equilibrio
+  array Vel_x, Vel_y , Vel_z ;
+  array w; // funciones de peso
+ public:
+  LatticeBolztmann3DQ15(int Lx, int Ly, int Lz); // constructor - reciba el tamaño del lattice
+  void Inicie(float r0, float Ux0, float Uy0, float Uz0); // reciba la densidad y velocidades cero
+  
+  array feq( array &rhos, array &Uxs , array &Uys , array &Uzs);
+  
+  array rho();
+  array Jx();
+  array Jy();
+  array Jz();
+  
+  void Colission(void);
+  void Adveccion(void);
+  
+};

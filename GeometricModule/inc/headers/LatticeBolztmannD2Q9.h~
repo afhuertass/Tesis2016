@@ -1,0 +1,26 @@
+#include <arrayfire.h>
+#include <iostream>
+#include <stdio.h>
+
+class LatticeBolztmann {
+private:
+  float V[2][q] ; // velocidades y pesos 
+  array f;
+  array Vel_x , Vel_y;
+  array V_x, V_y , w;
+public: // metodos
+  LatticeBolztmann(void); // constructor
+  void ImprimaAlgo(void);
+  void Inicie(void);
+  array feq(array &rhos, array &Uxs, array &Uys); 
+  // calcular la funcion de equilibrio 
+  array rho(); // array de las densidades en cada punto
+  array Jx(); // array de las velocidades en X en cada punto
+  array Jy();
+  void AgregarCondiciones(array &Jx, array &Jy );
+  void Colisione(void);
+  void Adveccione(void);
+  void ImprimaDebug(void );
+  void Avance(void);
+  void Evaluar(void);
+};
