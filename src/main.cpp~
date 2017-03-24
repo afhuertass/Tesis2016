@@ -1,9 +1,0 @@
-#include <LBD3Q15.h>
-#include <ForceModule.h>
-#include <ObstacleLoader.h>
-
-int main(){
-
-
-  return 0;
-}
